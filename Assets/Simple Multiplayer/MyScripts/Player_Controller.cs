@@ -4,9 +4,11 @@ using UnityEngine.Networking;
 
 public class Player_Controller : NetworkBehaviour {
 
+	public GameObject mycamera;
+
 	void Update () {
 		if (!isLocalPlayer){
-			
+			Destroy (mycamera.gameObject);
 			return;
 		}
 

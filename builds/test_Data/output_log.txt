@@ -1,26 +1,35 @@
 Initialize engine version: 5.4.1p2 (a8ddefd1bf1d)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 10.1]
-    Renderer: Intel(R) HD Graphics Family (ID=0x102)
-    Vendor:   Intel
-    VRAM:     880 MB
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon(TM) R7 M360 (ID=0x6900)
+    Vendor:   ATI
+    VRAM:     3072 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: \\HYPER-V-SERVER\user$\0441267076\Desktop\simple multyplayer\builds\test_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading \\HYPER-V-SERVER\user$\0441267076\Desktop\simple multyplayer\builds\test_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: \\HYPER-V-SERVER\user$\0441267076\Desktop\simple multyplayer\builds\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading \\HYPER-V-SERVER\user$\0441267076\Desktop\simple multyplayer\builds\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: \\HYPER-V-SERVER\user$\0441267076\Desktop\simple multyplayer\builds\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading \\HYPER-V-SERVER\user$\0441267076\Desktop\simple multyplayer\builds\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: \\HYPER-V-SERVER\user$\0441267076\Desktop\simple multyplayer\builds\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading \\HYPER-V-SERVER\user$\0441267076\Desktop\simple multyplayer\builds\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  1.946 seconds
-Platform assembly: \\HYPER-V-SERVER\user$\0441267076\Desktop\simple multyplayer\builds\test_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: \\HYPER-V-SERVER\user$\0441267076\Desktop\simple multyplayer\builds\test_Data\Managed\System.dll (this message is harmless)
-desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+Platform assembly: F:\Radman84\test\pixel-gun\builds\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\Radman84\test\pixel-gun\builds\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\Radman84\test\pixel-gun\builds\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\Radman84\test\pixel-gun\builds\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\Radman84\test\pixel-gun\builds\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\Radman84\test\pixel-gun\builds\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\Radman84\test\pixel-gun\builds\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading F:\Radman84\test\pixel-gun\builds\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.072 seconds
+Platform assembly: F:\Radman84\test\pixel-gun\builds\test_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: F:\Radman84\test\pixel-gun\builds\test_Data\Managed\System.dll (this message is harmless)
+desktop: 1360x768 60Hz; virtual: 1360x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.088278 ms
+UnloadTime: 1.091900 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 5c8 -> priority: 1 
+  Thread -> id: 848 -> priority: 1 
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:58214}
+Server client disconnect error:1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnDisconnectError error:6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
