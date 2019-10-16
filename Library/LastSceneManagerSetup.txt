@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Simple Multiplayer/MyScenes/simpel multiplayer.unity
+  isLoaded: 1
+  isActive: 1
