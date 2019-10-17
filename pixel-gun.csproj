@@ -64,7 +64,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Simple Multiplayer\MyScripts\Billboard.cs" />
     <Compile Include="Assets\Simple Multiplayer\MyScripts\Bullet.cs" />
     <Compile Include="Assets\Simple Multiplayer\MyScripts\Health.cs" />
     <Compile Include="Assets\Simple Multiplayer\MyScripts\Player_Controller.cs" />

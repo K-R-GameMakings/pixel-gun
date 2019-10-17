@@ -26,6 +26,11 @@ public class Health : NetworkBehaviour {
     void OnChangeHealth(int health)
     {
         healthBar.sizeDelta = new Vector2(health * 2, healthBar.sizeDelta.y);
-        healthBarCam.sizeDelta = new Vector2(health * 2, healthBarCam.sizeDelta.y);
+        if (isLocalPlayer) {
+            
+            healthBarCam.sizeDelta = new Vector2(health * 2, healthBarCam.sizeDelta.y);
+        }
+        
+        
     }
 }

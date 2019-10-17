@@ -5,7 +5,11 @@ using UnityEngine.Networking;
 public class Player_Controller : NetworkBehaviour {
 
 	public GameObject mycamera;
+    public GameObject myGun;
     public GameObject bullet;
+    public float sensivity;
+
+    private Vector2 ML;
 
     public Transform bulSpawn;
 
@@ -14,12 +18,21 @@ public class Player_Controller : NetworkBehaviour {
 			Destroy (mycamera.gameObject);
 			return;
 		}
+        Vector2 CL = new Vector2(Input.GetAxisRaw("Mouse X") * sensivity, Input.GetAxisRaw("Mouse Y") * sensivity);
+        
+        ML += CL;
 
-		float x = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
-		float z = Input.GetAxis ("Vertical") * Time.deltaTime * 3.0f;
+        ML.y = Mathf.Clamp(ML.y, -75, 80);
 
-		transform.Rotate (0,x,0);
-		transform.Translate (0,0,z);
+		
+		float z = Input.GetAxis ("Vertical") * Time.deltaTime * 2.5f;
+        float x = Input.GetAxis("Horizontal") * Time.deltaTime * 2.5f;
+
+        myGun.transform.localRotation = Quaternion.AngleAxis(-ML.y+90,Vector3.right);
+        mycamera.transform.localRotation = Quaternion.AngleAxis(-ML.y, Vector3.right);
+        transform.localRotation = Quaternion.AngleAxis(ML.x , transform.up);
+
+		transform.Translate (x,0,z);
 
         if (Input.GetMouseButtonDown(0)) {
             CmdFire();
